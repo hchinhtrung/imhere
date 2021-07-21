@@ -1,71 +1,158 @@
+</html>
+
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html lang="en">
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trung Hoang</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src chrome:; object-src 'none'" />
+  <title data-l10n-id="rights-title">About Your Rights</title>
+  <link rel="stylesheet" href="chrome://global/skin/in-content/info-pages.css" type="text/css" />
+  <link rel="stylesheet" href="chrome://global/skin/aboutRights.css" type="text/css" />
+  <link rel="localization" href="branding/brand.ftl" />
+  <link rel="localization" href="toolkit/about/aboutRights.ftl" />
 </head>
 
-<body class="flex justify-center content-center text-gray-800">
-  <div class="bg-gray-100 lg:w-2/5 md:w-3/4 w-full p-8 rounded-xl m-4 lg:mt-56 mt-16 shadow-lg">
-    <div>
-      <h1 class="text-3xl font-bold uppercase">Trung Hoang</h1>
-      <h2 class="italic">Product Owner</h2>
-    </div>
-
-    <div class="text-md mt-8">
-      <p class="">Motivated and forward-thinking <strong>Product Owner</strong> with experience in dynamic Fintech,
-        SaaS, CDP, and
-        MarTech
-        domains. </p>
-      <p class="mt-2">Experience in UI/UX development, business process improvements, requirements gathering, and
-        documentation process
-        analysis, and system implementations to achieve operational efficiencies.</p>
-    </div>
-
-    <div class="my-8 border-t-2 border-gray-300">
-    </div>
-
-
-    <div class="bg-gray-200 p-2 rounded-xl mx-16">
+<body id="your-rights">
+  <div class="container">
+    <div class="rights-header">
       <div>
-        <h1 class="text-lg font-medium flex flex-wrap justify-center">Contact</h1>
+        <h1 data-l10n-id="rights-title">About Your Rights</h1>
+
+        <p data-l10n-id="rights-intro">Firefox Nightly is free and open source software, built by a community
+          of thousands from all over the world. There are a few things you should
+          know:</p>
+      </div>
+    </div>
+
+    <ul>
+      <li data-l10n-id="rights-intro-point-1">Nightly is made available to you under the terms of the
+        <a href="http://www.mozilla.org/MPL/" data-l10n-name="mozilla-public-license-link">Mozilla Public License</a>.
+        This means you may use, copy and distribute Nightly to
+        others. You are also welcome to modify the source code of
+        Nightly as you want to meet your needs. The Mozilla Public
+        License also gives you the right to distribute your modified versions.</li>
+      <!-- Point 2 discusses Mozilla trademarks, and isn't needed when the build is unbranded.
+    - Point 4 discusses privacy policy, unbranded builds get a placeholder (for the vendor to replace)
+    - Point 5 discusses web service terms, unbranded builds gets a placeholder (for the vendor to replace) -->
+      <li data-l10n-id="rights-intro-point-2">You are not granted any trademark rights or licenses to the trademarks of
+        the Mozilla Foundation or any party, including without limitation the
+        Firefox name or logo. Additional information on trademarks may be found
+        <a href="http://www.mozilla.org/foundation/trademarks/policy.html"
+          data-l10n-name="mozilla-trademarks-link">here</a>.</li>
+      <li data-l10n-id="rights-intro-point-3">Some features in Nightly, such as the Crash Reporter, give
+        you the option to provide feedback to Mozilla. By choosing
+        to submit feedback, you give Mozilla permission to use the
+        feedback to improve its products, to publish the feedback on its websites,
+        and to distribute the feedback.</li>
+      <li data-l10n-id="rights-intro-point-4">How we use your personal information and feedback submitted to
+        Mozilla through Nightly is described in the
+        <a href="https://www.mozilla.org/legal/privacy/firefox.html"
+          data-l10n-name="mozilla-privacy-policy-link">Nightly
+          Privacy Policy</a>.</li>
+      <li data-l10n-id="rights-intro-point-5">Some Nightly features make use of web-based information
+        services, however, we cannot guarantee they are 100% accurate or
+        error-free. More details, including information on how to disable the
+        features that use these services, can be found in the
+        <a href="about:rights#webservices" id="showWebServices" data-l10n-name="mozilla-service-terms-link">service
+          terms</a>.</li>
+      <li data-l10n-id="rights-intro-point-6">In order to play back certain types of video content, Nightly
+        downloads certain content decryption modules from third parties.</li>
+    </ul>
+
+    <div id="webservices-container" style="display: none;">
+      <a name="webservices"></a>
+      <h3 data-l10n-id="rights-webservices-header">Firefox Nightly Web-Based Information Services</h3>
+
+      <p data-l10n-id="rights-webservices">Firefox Nightly uses web-based information services (“Services”) to
+        provide some of the features provided for your use with this binary version
+        of Nightly under the terms described below. If you do not
+        want to use one or more of the Services or the terms below are
+        unacceptable, you may disable the feature or Service(s). Instructions on
+        how to disable a particular feature or Service may be found
+        <a href="about:rights#disabling-webservices" id="showDisablingWebServices"
+          data-l10n-name="mozilla-disable-service-link">here</a>. Other features
+        and Services can be disabled in the application preferences.</p>
+
+      <div id="disabling-webservices-container" style="display: none;">
+        <a name="disabling-webservices"></a>
+        <p data-l10n-id="rights-safebrowsing"><strong>SafeBrowsing: </strong>Disabling the Safe Browsing feature is not
+          recommended as it may result in you going to unsafe sites. If you wish to
+          disable the feature completely, follow these steps:</p>
+        <ul>
+          <li data-l10n-id="rights-safebrowsing-term-1">Open the application preferences</li>
+          <li data-l10n-id="rights-safebrowsing-term-2">Select the Security selection</li>
+          <li data-l10n-id="rights-safebrowsing-term-3">Uncheck the option to “Block dangerous and deceptive content”
+          </li>
+          <li data-l10n-id="rights-safebrowsing-term-4">Safe Browsing is now disabled</li>
+        </ul>
+
+        <p data-l10n-id="rights-locationawarebrowsing"><strong>Location Aware Browsing: </strong>is always opt-in. No
+          location
+          information is ever sent without your permission. If you wish to disable
+          the feature completely, follow these steps:</p>
+        <ul>
+          <li data-l10n-id="rights-locationawarebrowsing-term-1">In the URL bar, type <code>about:config</code></li>
+          <li data-l10n-id="rights-locationawarebrowsing-term-2">Type geo.enabled</li>
+          <li data-l10n-id="rights-locationawarebrowsing-term-3">Double click on the geo.enabled preference</li>
+          <li data-l10n-id="rights-locationawarebrowsing-term-4">Location-Aware Browsing is now disabled</li>
+        </ul>
       </div>
 
-      <div class="flex flex-wrap justify-center mt-4">
-        <a href="https://www.linkedin.com/in/hchinhtrung/" class="">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-            class="fill-current text-gray-600">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path
-              d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
-          </svg>
-        </a>
-
-        <a href="https://join.skype.com/invite/n51b3rVxdGmw" class="ml-8">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-            class="fill-current text-gray-600">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path
-              d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71 5.25 5.25 0 0 1 7.09-7.09 8.5 8.5 0 0 1 9.71 9.71 5.25 5.25 0 0 1-7.09 7.09zm-1.258-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243 0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528.576 0 1.093-.342 1.093-.93 0-1.37-2.197-2.4-4.056-2.4-2.021 0-4.173.859-4.173 3.144 0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072 0 .687-.684 1.358-1.918 1.358-2.417 0-2.078-1.857-3.374-1.857-.58 0-1.003.398-1.003.971 0 1.114 1.352 2.598 4.377 2.598z" />
-          </svg>
-        </a>
-
-        <a href="https://t.me/hchinhtrung" class="ml-8">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
-            class="fill-current text-gray-600">
-            <path fill="none" d="M0 0h24v24H0z" />
-            <path
-              d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l.013-.007.87 2.87c.112.311.266.367.453.341.188-.025.287-.126.41-.244l1.188-1.148 2.55 1.888c.466.257.801.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.702-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78z" />
-          </svg>
-        </a>
-      </div>
+      <ol>
+        <!-- Terms only apply to official builds, unbranded builds get a placeholder. -->
+        <li data-l10n-id="rights-webservices-term-1">Mozilla and its contributors, licensors and partners work to
+          provide the most accurate and up-to-date Services. However, we cannot
+          guarantee that this information is comprehensive and error-free. For
+          example, the Safe Browsing Service may not identify some risky sites and
+          may identify some safe sites in error and the Location Aware Service all
+          locations returned by our service providers are estimates only and neither
+          we nor our service providers guarantee the accuracy of the locations
+          provided.</li>
+        <li data-l10n-id="rights-webservices-term-2">Mozilla may discontinue or change the Services at its
+          discretion.</li>
+        <li data-l10n-id="rights-webservices-term-3">You are welcome to use these Services with the accompanying version
+          of
+          Nightly, and Mozilla grants you its rights to
+          do so. Mozilla and its licensors reserve all other rights in
+          the Services. These terms are not intended to limit any rights granted
+          under open source licenses applicable to Nightly and to
+          corresponding source code versions of Nightly.</li>
+        <li data-l10n-id="rights-webservices-term-4"><strong>The Services are provided “as-is.” Mozilla, its
+            contributors, licensors, and distributors, disclaim all warranties, whether
+            express or implied, including without limitation, warranties that the
+            Services are merchantable and fit for your particular purposes. You bear
+            the entire risk as to selecting the Services for your purposes and as to
+            the quality and performance of the Services. Some jurisdictions do not
+            allow the exclusion or limitation of implied warranties, so this disclaimer
+            may not apply to you.</strong></li>
+        <li data-l10n-id="rights-webservices-term-5"><strong>Except as required by law, Mozilla, its
+            contributors, licensors, and distributors will not be liable for any
+            indirect, special, incidental, consequential, punitive, or exemplary
+            damages arising out of or in any way relating to the use of
+            Nightly and the Services. The collective liability under
+            these terms will not exceed $500 (five hundred dollars). Some jurisdictions
+            do not allow the exclusion or limitation of certain damages, so this
+            exclusion and limitation may not apply to you.</strong></li>
+        <li data-l10n-id="rights-webservices-term-6">Mozilla may update these terms as necessary from time to
+          time. These terms may not be modified or canceled without
+          Mozilla’s written agreement.</li>
+        <li data-l10n-id="rights-webservices-term-7">These terms are governed by the laws of the state of California,
+          U.S.A.,
+          excluding its conflict of law provisions. If any portion of these terms is
+          held to be invalid or unenforceable, the remaining portions will remain in
+          full force and effect. In the event of a conflict between a translated
+          version of these terms and the English language version, the English
+          language version shall control.</li>
+      </ol>
     </div>
   </div>
+
 </body>
+<script src="chrome://global/content/aboutRights.js"></script>
 
 </html>
